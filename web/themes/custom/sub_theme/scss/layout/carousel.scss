@@ -1,0 +1,54 @@
+@import "../base/variables";
+@import "../base/base";
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content {
+  margin-bottom: 50px;
+  .slick-track {
+    .slick-slide {
+      position: relative;
+      .views-field {
+        &.views-field-nothing,
+        &.views-field-field-date-time,
+        &.views-field-field-location-of-the-match,
+        &.views-field-body {
+          z-index: 2;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+        }
+
+        &.views-field-nothing{
+          top: 50%;
+          left: 5%; 
+        }
+
+      }
+      .views-field-field-carousel-image .field-content img {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+  // Styling for slider buttons.
+  .slick-arrow {
+    z-index: 1;
+    height:100px;
+    backdrop-filter: blur(5px);
+    background-image: $slider-arrow-color;
+    width: 100px;
+    transition: all 0.3s linear;
+    filter: opacity(0.5);
+
+    &.slick-next {
+      right: 5%;
+      top: 80%;
+    }
+    &.slick-prev {
+      left: 80%;
+      top: 80%;      
+    }
+  }
+}

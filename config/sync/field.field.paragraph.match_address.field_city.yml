@@ -1,0 +1,19 @@
+uuid: 92cb36d3-799c-445b-94ab-6119f43ad7e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_city
+    - paragraphs.paragraphs_type.match_address
+id: paragraph.match_address.field_city
+field_name: field_city
+entity_type: paragraph
+bundle: match_address
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 8b0460ee-066c-437a-aa6b-a8e81b77b70b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_time
+    - node.type.hero_carousel
+id: node.hero_carousel.field_date_time
+field_name: field_date_time
+entity_type: node
+bundle: hero_carousel
+label: 'Date & Time'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

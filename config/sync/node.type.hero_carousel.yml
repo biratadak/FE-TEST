@@ -1,0 +1,18 @@
+uuid: bc3c73a3-bf65-4acf-a028-0529f0b5aea3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Match
+type: hero_carousel
+description: 'Hompage carousel elements.'
+help: ''
+new_revision: true
+preview_mode: 2
+display_submitted: true

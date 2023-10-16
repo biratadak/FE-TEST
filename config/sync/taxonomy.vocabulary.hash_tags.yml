@@ -1,0 +1,8 @@
+uuid: 18750c52-bbd1-44f7-9004-106ff82bb24b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Hash Tags'
+vid: hash_tags
+description: 'tags for the matches'
+weight: 0

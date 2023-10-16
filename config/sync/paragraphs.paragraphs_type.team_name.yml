@@ -1,0 +1,10 @@
+uuid: 404f6573-d99a-4295-bf24-99b9d8f11ab7
+langcode: en
+status: true
+dependencies: {  }
+id: team_name
+label: 'Team Name'
+icon_uuid: null
+icon_default: null
+description: "    -The team names will be stored in the system in 2 parts:\r\n        -Full Name of a team like INDIA\r\n        -The code name of a team like IND"
+behavior_plugins: {  }

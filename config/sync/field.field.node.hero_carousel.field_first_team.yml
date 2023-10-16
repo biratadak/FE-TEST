@@ -1,0 +1,31 @@
+uuid: c42c2f94-afa6-4971-9007-ea32c5501474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_team
+    - node.type.hero_carousel
+    - paragraphs.paragraphs_type.team_name
+  module:
+    - entity_reference_revisions
+id: node.hero_carousel.field_first_team
+field_name: field_first_team
+entity_type: node
+bundle: hero_carousel
+label: 'First Team'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      team_name: team_name
+    negate: 0
+    target_bundles_drag_drop:
+      team_name:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

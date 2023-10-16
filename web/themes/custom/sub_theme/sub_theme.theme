@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the sub_theme theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for hero carousel block.
+ */
+function sub_theme_preprocess_block__sub_theme_views_block__hero_carousel_block_1(array &$variables): void {
+  // Adding custom library for hero_carousel.
+  $variables['content']['#attached']['library'][] = 'sub_theme/slick_library';
+}

@@ -1,0 +1,34 @@
+uuid: c001a6b8-0bc4-46a1-9c29-1950729f8c61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_of_the_match
+    - node.type.hero_carousel
+    - paragraphs.paragraphs_type.match_address
+  module:
+    - entity_reference_revisions
+id: node.hero_carousel.field_location_of_the_match
+field_name: field_location_of_the_match
+entity_type: node
+bundle: hero_carousel
+label: 'Location of the match'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      match_address: match_address
+    negate: 0
+    target_bundles_drag_drop:
+      match_address:
+        weight: 3
+        enabled: true
+      team_name:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

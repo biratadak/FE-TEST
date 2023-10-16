@@ -1,0 +1,15 @@
+# Slick library for carousel.
+slick_library:
+  css:
+    theme:
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css: {type: external}
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css: {type: external}
+      css/layout/carousel.css: {}
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js: {type: external}
+    //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {type: external}
+    js/carousel.js: {}
+  dependencies:
+    - core/jquery
+    - core/once
+    - core/drupal

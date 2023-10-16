@@ -1,0 +1,51 @@
+uuid: de57b059-77f3-433d-b5f8-e2c6f07e776c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hero_carousel.body
+    - field.field.node.hero_carousel.field_carousel_image
+    - field.field.node.hero_carousel.field_date_time
+    - field.field.node.hero_carousel.field_first_team
+    - field.field.node.hero_carousel.field_hash_tags
+    - field.field.node.hero_carousel.field_location_of_the_match
+    - field.field.node.hero_carousel.field_logo
+    - field.field.node.hero_carousel.field_second_team
+    - node.type.hero_carousel
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.hero_carousel.teaser
+targetEntityType: node
+bundle: hero_carousel
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_carousel_image: true
+  field_date_time: true
+  field_first_team: true
+  field_hash_tags: true
+  field_location_of_the_match: true
+  field_logo: true
+  field_second_team: true

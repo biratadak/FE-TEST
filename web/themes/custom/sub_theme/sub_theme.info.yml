@@ -1,0 +1,6 @@
+name: Custom Sub Theme
+type: theme
+base theme: bootstrap
+description: A flexible theme for FE test.
+package: Custom
+core_version_requirement: ^10
