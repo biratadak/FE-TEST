@@ -1,0 +1,22 @@
+@mixin container($param) {
+  margin: 0 auto;
+  $size: map-get(
+    (
+      lg: 1320px,
+      sm: 1140px,
+    ),
+    $param
+  );
+  max-width: $size;
+}
+
+@mixin bullet-style {
+  background-color: red;
+  border-radius: 5px;
+  content: " ";
+  display: inline-block;
+  height: 10px;
+  margin-right: 20px;
+  vertical-align: middle;
+  width: 10px;
+}

@@ -3,7 +3,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  color: white;
 }
 
 a,
@@ -15,45 +14,106 @@ a:active {
 }
 
 #block-sub-theme-views-block-hero-carousel-block-1 .view-content {
+  color: white;
   margin-bottom: 50px;
 }
 #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide {
   position: relative;
+  max-height: 1200px;
 }
-#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.views-field-nothing,
-#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.views-field-field-date-time,
-#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.views-field-field-location-of-the-match,
-#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.views-field-body {
-  z-index: 2;
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  height: 100%;
+  width: 40%;
 }
-#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.views-field-nothing {
-  top: 50%;
-  left: 5%;
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .logo {
+  filter: brightness(10);
+  margin-top: 50px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info {
+  margin-top: 150px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .tags {
+  display: none;
+  background-color: #6f00fe;
+  width: min-content;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .match-title {
+  display: flex;
+  font-size: 25px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .match-title > a::after {
+  content: ":";
+  margin-right: 5px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .match-title .field--name-field-team-name {
+  display: none;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .match-title .paragraph--type--team-name + .paragraph--type--team-name {
+  display: flex;
+  width: max-content;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .match-title .paragraph--type--team-name + .paragraph--type--team-name::before {
+  content: " VS ";
+  margin: 0px 10px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .time {
+  font-size: 25px;
+  margin-top: 10px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .location .layout__region--content {
+  display: flex;
+  font-size: 25px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .location .layout__region--content .field--name-field-venue::before {
+  background-color: red;
+  border-radius: 5px;
+  content: " ";
+  display: inline-block;
+  height: 10px;
+  margin-right: 20px;
+  vertical-align: middle;
+  width: 10px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .location .layout__region--content .field--name-field-venue::after {
+  content: ",";
+  margin-right: 5px;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .description {
+  margin-top: 50px;
+  font-size: 20px;
 }
 #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field-field-carousel-image .field-content img {
+  filter: brightness(0.5);
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow {
   z-index: 1;
-  height: 100px;
+  height: 80px;
+  width: 80px;
+  top: 60%;
   backdrop-filter: blur(5px);
-  background-image: linear-gradient(120deg, white, black);
-  width: 100px;
-  transition: all 0.3s linear;
+  background-color: rgba(255, 255, 255, 0.5);
   filter: opacity(0.5);
 }
 #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow.slick-next {
-  right: 5%;
-  top: 80%;
+  right: 10%;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow.slick-next::before {
+  content: ">";
 }
 #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow.slick-prev {
   left: 80%;
-  top: 80%;
+}
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow.slick-prev::before {
+  content: "<";
 }

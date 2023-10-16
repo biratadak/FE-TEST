@@ -2,15 +2,15 @@
 $header-font: 'Bradley Hand';
 
 // Custom fonts size
-$slider-title-size: 25px;
-$slider-heading-size: 35px;
-$slider-link-size: 20px;
+$slider-mid-size: 25px;
+$slider-max-size: 35px;
+$slider-small-size: 20px;
 
 // Slider color palette.
 $slide-text-primary-color:white;
-$slide-add:red;
-$slide-text-color: white;
-$slider-arrow-color: linear-gradient(120deg, white, black);
+$slider-arrow-color: rgba(255, 255, 255, 0.5);
+$tag-color: #6e00fe74;
+
 
 // Button default style
 $button-padding: 5px 15px;

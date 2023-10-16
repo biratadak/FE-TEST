@@ -1,54 +1,121 @@
 @import "../base/variables";
 @import "../base/base";
+@import "../components/mixin";
+
 #block-sub-theme-views-block-hero-carousel-block-1 .view-content {
+  color: $slide-text-primary-color;
   margin-bottom: 50px;
   .slick-track {
     .slick-slide {
       position: relative;
+      max-height: 1200px;
       .views-field {
-        &.views-field-nothing,
-        &.views-field-field-date-time,
-        &.views-field-field-location-of-the-match,
-        &.views-field-body {
-          z-index: 2;
+        &.match-details .field-content {
           position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%,-50%);
-        }
+          top: 0;
+          left: 0;
+          padding: 10px 20px;
+          height: 100%;
+          width: 40%;
 
-        &.views-field-nothing{
-          top: 50%;
-          left: 5%; 
-        }
+          // ICC logo
+          & .logo {
+            filter: brightness(10);
+            margin-top: 50px;
+          }
 
+          // Display match title in given format.
+          .info {
+            margin-top: 150px;
+            // HashTags
+            .tags {
+              display: none;
+              background-color: #6f00fe;
+              width: min-content;
+              padding: 5px 10px;
+              border-radius: 15px;
+              margin-bottom: 10px ;
+            }
+            // Title of the slide.
+            .match-title {
+              & > a::after {
+                content: ":";
+                margin-right: 5px;
+              }
+              // Hiding team name.
+              & .field--name-field-team-name {
+                display: none;
+              }
+              & .paragraph--type--team-name + .paragraph--type--team-name {
+                display: flex;
+                width: max-content;
+                &::before {
+                  content: " VS ";
+                  margin: 0px 10px;
+                }
+              }
+              display: flex;
+              font-size: $slider-mid-size;
+            }
+
+            // Time of the match.
+            .time {
+              font-size: $slider-mid-size;
+              margin-top: 10px;
+            }
+            // Location of the match
+            .location {
+              .layout__region--content {
+                .field--name-field-venue::before {
+                  @include bullet-style;
+                }
+                .field--name-field-venue::after {
+                  content: ",";
+                  margin-right: 5px;
+                }
+                display: flex;
+                font-size: $slider-mid-size;
+              }
+            }
+
+            // Description of the match.
+            .description {
+              margin-top: 50px;
+              font-size: $slider-small-size;
+            }
+          }
+        }
       }
       .views-field-field-carousel-image .field-content img {
+        filter: brightness(0.5);
         position: relative;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         object-fit: cover;
       }
     }
-
   }
   // Styling for slider buttons.
   .slick-arrow {
     z-index: 1;
-    height:100px;
+    height: 80px;
+    width: 80px;
+    top: 60%;
     backdrop-filter: blur(5px);
-    background-image: $slider-arrow-color;
-    width: 100px;
-    transition: all 0.3s linear;
+    background-color: $slider-arrow-color;
     filter: opacity(0.5);
 
     &.slick-next {
-      right: 5%;
-      top: 80%;
+      right: 10%;
+      &::before{
+        content: ">";
+      }
     }
     &.slick-prev {
       left: 80%;
-      top: 80%;      
+      &::before{
+        content: "<";
+      }
     }
   }
 }
