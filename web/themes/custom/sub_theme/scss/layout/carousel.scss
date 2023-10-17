@@ -20,13 +20,17 @@
 
           // ICC logo
           & .logo {
+            background-image: url(../../../../../sites/default/files/default_images/logo.png);
+            background-repeat: no-repeat;
+            background-size: contain;
             filter: brightness(10);
+            height: 150px;
             margin-top: 50px;
           }
 
           // Display match title in given format.
           .info {
-            margin-top: 150px;
+            margin-top: 100px;
             // HashTags
             .tags {
               display: none;
@@ -34,54 +38,35 @@
               width: min-content;
               padding: 5px 10px;
               border-radius: 15px;
-              margin-bottom: 10px ;
+              margin-bottom: 10px;
             }
-            // Title of the slide.
+            
+            // Title of the match.
             .match-title {
-              & > a::after {
-                content: ":";
-                margin-right: 5px;
-              }
-              // Hiding team name.
-              & .field--name-field-team-name {
-                display: none;
-              }
-              & .paragraph--type--team-name + .paragraph--type--team-name {
-                display: flex;
-                width: max-content;
-                &::before {
-                  content: " VS ";
-                  margin: 0px 10px;
-                }
-              }
-              display: flex;
               font-size: $slider-mid-size;
             }
 
             // Time of the match.
-            .time {
-              font-size: $slider-mid-size;
-              margin-top: 10px;
+            .time{
+              font-size: $slider-small-size;
+              margin-top: 10px ;
+              color: $time-color;
+              font-weight: bolder;
             }
+            
             // Location of the match
             .location {
-              .layout__region--content {
-                .field--name-field-venue::before {
+              font-size: $slider-mid-size;
+                &::before {
                   @include bullet-style;
                 }
-                .field--name-field-venue::after {
-                  content: ",";
-                  margin-right: 5px;
-                }
-                display: flex;
-                font-size: $slider-mid-size;
               }
-            }
+            
 
             // Description of the match.
             .description {
               margin-top: 50px;
-              font-size: $slider-small-size;
+              font-size: $paragraph-size;
             }
           }
         }
@@ -100,22 +85,44 @@
     z-index: 1;
     height: 80px;
     width: 80px;
-    top: 60%;
+    top: 80%;
     backdrop-filter: blur(5px);
     background-color: $slider-arrow-color;
     filter: opacity(0.5);
 
     &.slick-next {
       right: 10%;
-      &::before{
+      &::before {
         content: ">";
+        display: inline-block;
+        transform: scale(1.5, 2);
+        line-height: 0;
       }
     }
     &.slick-prev {
       left: 80%;
-      &::before{
+      &::before {
         content: "<";
+        display: inline-block;
+        transform: scale(1.5, 2);
+        line-height: 0;
       }
     }
+  }
+
+  // Styling for the slider progress-bar.
+  .slick-dots {
+    li {
+      button::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        padding: 0px;
+        background-color: aliceblue;
+      }
+    }
+    top: 80%;
+    left: 20%;
   }
 }
