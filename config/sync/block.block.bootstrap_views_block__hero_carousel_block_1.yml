@@ -1,0 +1,24 @@
+uuid: f4edd51e-55e1-473a-99b4-20a500e4b575
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_carousel
+  module:
+    - views
+  theme:
+    - bootstrap
+id: bootstrap_views_block__hero_carousel_block_1
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:hero_carousel-block_1'
+settings:
+  id: 'views_block:hero_carousel-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

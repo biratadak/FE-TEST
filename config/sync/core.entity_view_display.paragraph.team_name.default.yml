@@ -1,0 +1,38 @@
+uuid: 98054bce-0e46-4a76-878d-a4da52156c00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_name.field_team_code
+    - field.field.paragraph.team_name.field_team_name
+    - paragraphs.paragraphs_type.team_name
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.team_name.default
+targetEntityType: paragraph
+bundle: team_name
+mode: default
+content:
+  field_team_code:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_team_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

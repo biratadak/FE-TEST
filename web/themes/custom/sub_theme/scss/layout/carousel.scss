@@ -1,0 +1,128 @@
+@import "../base/variables";
+@import "../base/base";
+@import "../components/mixin";
+
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content {
+  color: $slide-text-primary-color;
+  margin-bottom: 50px;
+  .slick-track {
+    .slick-slide {
+      position: relative;
+      max-height: 1200px;
+      .views-field {
+        &.match-details .field-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px 20px;
+          height: 100%;
+          width: 40%;
+
+          // ICC logo
+          & .logo {
+            background-image: url(../../../../../sites/default/files/default_images/logo.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            filter: brightness(10);
+            height: 150px;
+            margin-top: 50px;
+          }
+
+          // Display match title in given format.
+          .info {
+            margin-top: 100px;
+            // HashTags
+            .tags {
+              display: none;
+              background-color: #6f00fe;
+              width: min-content;
+              padding: 5px 10px;
+              border-radius: 15px;
+              margin-bottom: 10px;
+            }
+            
+            // Title of the match.
+            .match-title {
+              font-size: $slider-mid-size;
+            }
+
+            // Time of the match.
+            .time{
+              font-size: $slider-small-size;
+              margin-top: 10px ;
+              color: $time-color;
+              font-weight: bolder;
+            }
+            
+            // Location of the match
+            .location {
+              font-size: $slider-mid-size;
+                &::before {
+                  @include bullet-style;
+                }
+              }
+            
+
+            // Description of the match.
+            .description {
+              margin-top: 50px;
+              font-size: $paragraph-size;
+            }
+          }
+        }
+      }
+      .views-field-field-carousel-image .field-content img {
+        filter: brightness(0.5);
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  // Styling for slider buttons.
+  .slick-arrow {
+    z-index: 1;
+    height: 80px;
+    width: 80px;
+    top: 80%;
+    backdrop-filter: blur(5px);
+    background-color: $slider-arrow-color;
+    filter: opacity(0.5);
+
+    &.slick-next {
+      right: 10%;
+      &::before {
+        content: ">";
+        display: inline-block;
+        transform: scale(1.5, 2);
+        line-height: 0;
+      }
+    }
+    &.slick-prev {
+      left: 80%;
+      &::before {
+        content: "<";
+        display: inline-block;
+        transform: scale(1.5, 2);
+        line-height: 0;
+      }
+    }
+  }
+
+  // Styling for the slider progress-bar.
+  .slick-dots {
+    li {
+      button::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        padding: 0px;
+        background-color: aliceblue;
+      }
+    }
+    top: 80%;
+    left: 20%;
+  }
+}

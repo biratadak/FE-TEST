@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding-top: 0;
+  margin-top: 0; }
+
+.col-sm-12 {
+  padding: 0; }
+
+a, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+  border: none; }
+
+#block-sub-theme-views-block-hero-carousel-block-1 .view-content {
+  color: white;
+  margin-bottom: 50px; }
+  #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide {
+    position: relative;
+    max-height: 1200px; }
+    #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 20px;
+      height: 100%;
+      width: 40%; }
+      #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .logo {
+        background-image: url(../../../../../sites/default/files/default_images/logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(10);
+        height: 150px;
+        margin-top: 50px; }
+      #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info {
+        margin-top: 100px; }
+        #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .tags {
+          display: none;
+          background-color: #6f00fe;
+          width: min-content;
+          padding: 5px 10px;
+          border-radius: 15px;
+          margin-bottom: 10px; }
+        #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .match-title {
+          font-size: 25px; }
+        #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .time {
+          font-size: 20px;
+          margin-top: 10px;
+          color: #fe3ceb;
+          font-weight: bolder; }
+        #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .location {
+          font-size: 25px; }
+          #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .location::before {
+            background-color: red;
+            border-radius: 5px;
+            content: " ";
+            display: inline-block;
+            height: 10px;
+            vertical-align: middle;
+            width: 10px; }
+        #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field.match-details .field-content .info .description {
+          margin-top: 50px;
+          font-size: large; }
+    #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-track .slick-slide .views-field-field-carousel-image .field-content img {
+      filter: brightness(0.5);
+      position: relative;
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow {
+    z-index: 1;
+    height: 80px;
+    width: 80px;
+    top: 80%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: opacity(0.5); }
+    #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow.slick-next {
+      right: 10%; }
+      #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow.slick-next::before {
+        content: ">";
+        display: inline-block;
+        transform: scale(1.5, 2);
+        line-height: 0; }
+    #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow.slick-prev {
+      left: 80%; }
+      #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-arrow.slick-prev::before {
+        content: "<";
+        display: inline-block;
+        transform: scale(1.5, 2);
+        line-height: 0; }
+  #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-dots {
+    top: 80%;
+    left: 20%; }
+    #block-sub-theme-views-block-hero-carousel-block-1 .view-content .slick-dots li button::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 5px;
+      padding: 0px;
+      background-color: aliceblue; }

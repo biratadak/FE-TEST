@@ -1,0 +1,29 @@
+uuid: f5736715-2511-40cb-9542-8d47aacd7b85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_team_name
+    - paragraphs.paragraphs_type.team_name
+    - taxonomy.vocabulary.team_name
+id: paragraph.team_name.field_team_name
+field_name: field_team_name
+entity_type: paragraph
+bundle: team_name
+label: 'Team Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      team_name: team_name
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

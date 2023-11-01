@@ -3,12 +3,12 @@ _core:
 langcode: en
 uuid: 3bfcd2c1-afe7-46d3-8e8b-8fd60898e317
 name: Drupal
-mail: ''
+mail: adakveer@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

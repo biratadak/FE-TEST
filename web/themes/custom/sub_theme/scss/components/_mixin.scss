@@ -1,0 +1,9 @@
+@mixin bullet-style {
+  background-color: red;
+  border-radius: 5px;
+  content: " ";
+  display: inline-block;
+  height: 10px;
+  vertical-align: middle;
+  width: 10px;
+}
